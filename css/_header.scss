@@ -1,0 +1,370 @@
+@import '_global';
+
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    border-bottom: 1px solid rgba(234,234,234, .15);
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 110px;
+
+        .logo {
+            width: 158px;
+            margin: 0 20px;
+            padding: 15px 0;
+        }
+        .menu {
+            ul {
+                padding: 0 20px;
+                li {
+                    text-transform: capitalize;
+                    margin: 0 15px;
+                    a {
+                        position: relative;
+                        display: block;
+                        color: $white-color;
+                        font-weight: 800;
+                        line-height: 110px;
+                        i {
+                            font-size: 12px;
+                        }
+
+                        &.active {
+                            span {
+                                &::before {
+                                    content: '';
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                    width: 55px;
+                                    height: 4px;
+                                    background-color: $main-green;
+                                }
+                            }
+                        }
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            left: auto;
+                            right: 0;
+                            width: 0%;
+                            height: 4px;
+                            background-color: $white-color;
+                            // opacity: 0;
+                            transition: .3s width ease;
+                        }
+
+                        &:hover {
+                            &::before {
+                                left: 0;
+                                right: auto;
+                                width: 100%;
+                                background-color: $main-green;
+                                // opacity: 1;
+                            }
+                        }
+                    }
+
+                    // DROP MENUS
+                    &.drop {
+                        position: relative;
+
+                        &:hover {
+                            .dropMenu {
+                                transform: translateY(0px);
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+
+                        .dropMenu {
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            width: 235px;
+                            background-color: $white-color;
+                            transform: translateY(20px);
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: .4s ease;
+                            ul {
+                                padding: 27px 40px;
+                                overflow: hidden;
+                                li {
+                                    padding: 2px 0;
+                                    margin: 0;
+                                    a {
+                                        position: relative;
+                                        font-size: 14px;
+                                        font-weight: normal;
+                                        line-height: normal;
+                                        color: $grey-p-color;
+                                        padding: 8px 0;
+                                        transition: .4s color ease;
+
+                                        &:hover {
+                                            color: $main-green;
+                                            &::after {
+                                                width: 100%;
+                                            }
+
+                                            .arrow {
+                                                opacity: 1;
+                                                left: -18px;
+                                            }
+                                        }
+
+                                        &.active {
+                                            color: $main-green;
+                                        }
+
+                                        &::before {
+                                            content: '';
+                                            position: absolute;
+                                            bottom: -2px;
+                                            left: 0;
+                                            width: 100%;
+                                            height: 1px;
+                                            background-color: $grey-p-color;
+                                            opacity: .3;
+                                        }
+
+                                        &::after {
+                                            content: '';
+                                            position: absolute;
+                                            bottom: -2px;
+                                            left: 0;
+                                            width: 0%;
+                                            height: 1px;
+                                            background-color: $main-green;
+                                            transition: .4s ease;
+                                        }
+
+                                        &.rtl {
+                                            &::before {
+                                                content: none;
+                                            }
+                                        }
+
+                                        .arrow {
+                                            color: $main-green;
+                                            position: absolute;
+                                            top: 50%;
+                                            left: -52px;
+                                            transform: translate(0, -50%);
+                                            opacity: 0;
+                                            transition: .4s ease;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.service {
+                        position: relative;
+
+                        &:hover {
+                            .dropWrapper {
+                                .dropMenu {
+                                    transform: translateY(0px);
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+                            }
+                        }
+                        .dropWrapper {
+                            .dropMenu {
+                                position: absolute;
+                                top: 100%;
+                                left: 0;
+                                width: 245px;
+                                background-color: $white-color;
+                                transform: translateY(20px);
+                                opacity: 0;
+                                visibility: hidden;
+                                transition: .4s ease;
+
+                                &.linear {
+                                    left: 245px;
+                                }
+
+                                
+                                ul {
+                                    padding: 37px 40px 26px;
+                                    overflow: hidden;
+
+                                    .title {
+                                        margin-bottom: 10px;
+                                        a {
+                                            text-transform: capitalize;
+                                            color: $dark-color;
+                                            font-size: 18px;
+                                            font-weight: 600;
+                                            line-height: normal;
+                                            transition: .4s ease;
+
+                                            &:hover {
+                                                color: $main-green;
+                                            }
+    
+                                            &::before {
+                                                content: none;
+                                            }
+                                        }
+                                    }
+
+                                    li {
+                                        padding: 2px 0;
+                                        margin: 0;
+                                        a {
+                                            position: relative;
+                                            font-size: 14px;
+                                            font-weight: normal;
+                                            line-height: normal;
+                                            color: $grey-p-color;
+                                            padding: 8px 0;
+                                            transition: .4s color ease;
+    
+                                            &:hover {
+                                                color: $main-green;
+                                                &::after {
+                                                    width: 100%;
+                                                }
+    
+                                                .arrow {
+                                                    opacity: 1;
+                                                    left: -18px;
+                                                }
+                                            }
+    
+                                            &.active {
+                                                color: $main-green;
+                                            }
+    
+                                            &::before {
+                                                content: '';
+                                                position: absolute;
+                                                bottom: -2px;
+                                                left: 0;
+                                                width: 100%;
+                                                height: 1px;
+                                                background-color: $grey-p-color;
+                                                opacity: .3;
+                                            }
+    
+                                            &::after {
+                                                content: '';
+                                                position: absolute;
+                                                bottom: -2px;
+                                                left: 0;
+                                                width: 0%;
+                                                height: 1px;
+                                                background-color: $main-green;
+                                                transition: .4s ease;
+                                            }
+    
+                                            &.rtl {
+                                                &::before {
+                                                    content: none;
+                                                }
+                                            }
+    
+                                            .arrow {
+                                                color: $main-green;
+                                                position: absolute;
+                                                top: 50%;
+                                                left: -52px;
+                                                transform: translate(0, -50%);
+                                                opacity: 0;
+                                                transition: .4s ease;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contact {
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            a {
+                &.btn-white {
+                    padding: 22px 30px;
+                    margin: 0 10px;
+                }
+                &.search {
+                    position: relative;
+                    display: inline-block;
+                    padding: 0 10px;
+                    color: $white-color;
+                    i {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        font-size: 16px;
+                    }
+                }
+            }
+            .cart {
+                padding: 0 15px;
+                margin-right: 8px;
+                position: relative;
+                span {
+                    font-size: 16px;
+                    color: $white-color;
+                    cursor: pointer;
+                    &.zero {
+                        position: absolute;
+                        top: -5px;
+                        right: 0;
+                        width: 16px;
+                        height: 16px;
+                        background-color: $main-green;
+                        border-radius: 50%;
+                        font-size: 11px;
+                        text-align: center;
+                    }
+                }
+            }
+            .call {
+                display: flex;
+                align-items: center;
+                margin-left: 15px;
+                padding: 0 10px;
+                .phone {
+                    position: relative;
+                    padding: 0 8px;
+                }
+                .number {
+                    a {
+                        display: block;
+                        padding: 0 8px;
+
+                        &.knock {
+                            font-size: 20px;
+                            color: $white-color;
+                        }
+                        &.mail {
+                            color: $grey-color1;
+                            font-size: 14px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
