@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 * {
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
@@ -826,6 +827,349 @@ ul {
     color: white;
     margin-left: 5px;
     cursor: pointer;
+  }
+}
+
+* {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+}
+
+.btn-white {
+  display: inline-block;
+  padding: 26.5px 39px;
+  font-weight: 700;
+  color: #1B1A1A;
+  background-color: white;
+  border-color: white;
+  text-transform: capitalize;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.btn-white:hover {
+  background-color: #65B530;
+  color: white;
+}
+
+.btn-green {
+  display: inline-block;
+  padding: 26.5px 39px;
+  font-weight: 700;
+  color: white;
+  background-color: #65B530;
+  border-color: #65B530;
+  text-transform: capitalize;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.btn-green:hover {
+  background-color: #1B1A1A;
+  color: white;
+}
+
+.btn-dark {
+  display: inline-block;
+  padding: 26.5px 39px;
+  font-weight: 700;
+  color: white;
+  background-color: #1B1A1A;
+  border-color: #1B1A1A;
+  text-transform: capitalize;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.btn-dark:hover {
+  background-color: #65B530;
+  color: white;
+}
+
+.pulse {
+  position: relative;
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #65B530;
+  -webkit-animation: pulse 3s linear infinite;
+          animation: pulse 3s linear infinite;
+}
+
+.pulse::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 65px;
+  height: 65px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #65B530;
+  -webkit-animation: pulse2 3s linear infinite;
+          animation: pulse2 3s linear infinite;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.pulse::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #65B530;
+  border-radius: 50%;
+}
+
+.pulse i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  z-index: 1;
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(101, 181, 48, 0.3);
+            box-shadow: 0 0 0 0 rgba(101, 181, 48, 0.3);
+  }
+  40% {
+    -webkit-box-shadow: 0 0 0 65px rgba(101, 181, 48, 0);
+            box-shadow: 0 0 0 65px rgba(101, 181, 48, 0);
+  }
+  80% {
+    -webkit-box-shadow: 0 0 0 65px rgba(101, 181, 48, 0);
+            box-shadow: 0 0 0 65px rgba(101, 181, 48, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(101, 181, 48, 0);
+            box-shadow: 0 0 0 0 rgba(101, 181, 48, 0);
+  }
+}
+
+@keyframes pulse2 {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(101, 181, 48, 0.3);
+            box-shadow: 0 0 0 0 rgba(101, 181, 48, 0.3);
+  }
+  40% {
+    -webkit-box-shadow: 0 0 0 65px rgba(101, 181, 48, 0);
+            box-shadow: 0 0 0 65px rgba(101, 181, 48, 0);
+  }
+  80% {
+    -webkit-box-shadow: 0 0 0 65px rgba(101, 181, 48, 0);
+            box-shadow: 0 0 0 65px rgba(101, 181, 48, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(101, 181, 48, 0);
+            box-shadow: 0 0 0 0 rgba(101, 181, 48, 0);
+  }
+}
+
+.f-h6 {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.f-txt {
+  color: #9B9B9B;
+}
+
+.f-txt.mg {
+  margin-bottom: 15px;
+}
+
+.f-txt.pdg {
+  padding-top: 25px;
+  padding-bottom: 2px;
+  margin-bottom: 0;
+}
+
+.ltr-num {
+  font-size: 22px;
+  color: #65B530;
+  display: block;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+  padding: 5px 0;
+}
+
+.ltr-num:hover {
+  color: white;
+}
+
+.footer {
+  background-color: #161616;
+}
+
+.footer .topSide {
+  padding: 120px 0;
+}
+
+.footer .topSide .quick .contacts {
+  position: relative;
+}
+
+.footer .topSide .quick .contacts span {
+  color: #65B530;
+  position: absolute;
+}
+
+.footer .topSide .quick .contacts span i {
+  font-size: 20px;
+}
+
+.footer .topSide .quick .contacts span.letter {
+  top: 12px;
+  left: -40px;
+}
+
+.footer .topSide .quick .contacts span.phone {
+  bottom: 9.5px;
+  left: -40px;
+}
+
+.footer .topSide .quick .locat {
+  display: block;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.footer .topSide .quick .locat i {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.footer .topSide .list {
+  text-transform: capitalize;
+}
+
+.footer .topSide .list ul li {
+  padding: 6px 0;
+}
+
+.footer .topSide .list ul li a {
+  color: #9B9B9B;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.footer .topSide .list ul li a:hover {
+  color: white;
+}
+
+.footer .topSide .project {
+  text-transform: capitalize;
+  text-align: right;
+}
+
+.footer .topSide .project .btn-green:hover {
+  background-color: white;
+  color: #65B530;
+}
+
+.footer .topSide .project .icons {
+  margin-top: 40px;
+}
+
+.footer .topSide .project .icons .icon-bg {
+  position: relative;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  color: #161616;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 13px;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.footer .topSide .project .icons .icon-bg i {
+  font-size: 13px;
+}
+
+.footer .topSide .project .icons .icon-bg:hover {
+  color: #65B530;
+}
+
+.footer .topSide .project .icons .icon-bg:hover::before {
+  background-color: #65B530;
+  border-color: #65B530;
+}
+
+.footer .topSide .project .icons .icon-bg:hover::after {
+  background-color: white;
+}
+
+.footer .topSide .project .icons .icon-bg::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  width: 22px;
+  height: 22px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #65B530;
+  border-radius: 50%;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+  z-index: -1;
+}
+
+.footer .topSide .project .icons .icon-bg::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 2px solid #474747;
+  border-radius: 50%;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+  z-index: -1;
+}
+
+.footer .back {
+  position: relative;
+  height: 80px;
+  background-color: #282828;
+}
+
+@media (max-width: 992px) {
+  .f-h6 {
+    margin-top: 40px;
+  }
+  .footer .project {
+    text-align: left;
   }
 }
 

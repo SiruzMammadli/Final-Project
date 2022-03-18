@@ -1,0 +1,188 @@
+@import '_global';
+
+
+// FOOTER START
+
+// GENERALS START
+
+.f-h6 {
+    font-size: 18px;
+    font-weight: 600;
+    color: $white-color;
+    margin-bottom: 40px;
+}
+
+.f-txt {
+    color: $grey-p-color;
+
+    &.mg {
+        margin-bottom: 15px;
+    }
+    &.pdg {
+        padding-top: 25px;
+        padding-bottom: 2px;
+        margin-bottom: 0;
+    }
+}
+
+.ltr-num {
+    font-size: 22px;
+    color: $main-green;
+    display: block;
+    transition: .4s ease;
+    padding: 5px 0;
+
+
+    &:hover {
+        color: $white-color;
+    }
+}
+
+// GENERALS END
+
+.footer {
+    background-color: #161616;
+    .topSide {
+        padding: 120px 0;
+        .quick {
+            .contacts {
+                position: relative;
+                span {
+                    color: $main-green;
+                    position: absolute;
+    
+                    i {
+                        font-size: 20px;
+                    }
+    
+                    &.letter {
+                        top: 12px;
+                        left: -40px;
+                    }
+    
+                    &.phone {
+                        bottom: 9.5px;
+                        left: -40px;
+                    }
+                }
+            }
+            .locat {
+                display: block;
+                color: $white-color;
+                font-size: 14px;
+                font-weight: 600;
+                margin-top: 20px;
+                i {
+                    font-size: 14px;
+                    margin-right: 5px;
+                }
+            }
+        }
+        .list {
+            text-transform: capitalize;
+            ul {
+                li {
+                    padding: 6px 0;
+                    a {
+                        color: $grey-p-color;
+                        transition: .4s ease;
+    
+                        &:hover {
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+        }
+        .project {
+            text-transform: capitalize;
+            text-align: right;
+    
+            .btn-green {
+                &:hover {
+                    background-color: $white-color;
+                    color: $main-green;
+                }
+            }
+    
+            .icons {
+                margin-top: 40px;
+                .icon-bg {
+                    position: relative;
+                    display: inline-block;
+                    width: 22px;
+                    height: 22px;
+                    color: #161616;
+                    border-radius: 50%;
+                    text-align: center;
+                    margin: 0 13px;
+                    cursor: pointer;
+                    z-index: 1;
+                    transition: .4s ease;
+    
+                    i {
+                        font-size: 13px;
+                    }
+    
+                    &:hover {
+                        color: $main-green;
+    
+                        &::before {
+                            background-color: $main-green;
+                            border-color: $main-green;
+                        }
+                        &::after {
+                            background-color: $white-color;
+                        }
+                    }
+    
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        top: 50%;
+                        left: 50%;
+                        width: 22px;
+                        height: 22px;
+                        transform: translate(-50%,-50%);
+                        background-color: $main-green;
+                        border-radius: 50%;
+                        transition: .4s ease;
+                        z-index: -1;
+                    }
+    
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        top: 50%;
+                        left: 50%;
+                        width: 40px;
+                        height: 40px;
+                        transform: translate(-50%,-50%);
+                        border: 2px solid #474747;
+                        border-radius: 50%;
+                        transition: .4s ease;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+    }
+
+    .back {
+        position: relative;
+        height: 80px;
+        background-color: #282828;
+    }
+}
+
+@media (max-width: 992px) {
+    .f-h6 {
+        margin-top: 40px;
+    }
+
+    .footer {
+        .project {
+            text-align: left;
+        }
+    }
+}
