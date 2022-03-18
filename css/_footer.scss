@@ -172,6 +172,126 @@
         position: relative;
         height: 80px;
         background-color: #282828;
+        text-transform: capitalize;
+
+        .arrow-top {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+            background-color: #282828;
+            cursor: pointer;
+            transition: .4s ease;
+
+            &:hover {
+                background-color: $main-green;
+            }
+
+            .to-top {
+                align-self: flex-end;
+                display: block;
+                padding: 20px 5px;
+                margin-bottom: 8px;
+                color: $white-color;
+                font-weight: 600;
+            }
+
+            .arrow {
+                position: absolute;
+                animation: up 2s linear infinite;
+
+                i {
+                    color: $white-color;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        background-color: $white-color;
+        .left-side {
+            padding: 30px;
+            text-align: right;
+
+            span {
+                color: $grey-p-color;
+                cursor: text;
+
+                &:hover {
+                    .by-cms {
+                        color: #282828;
+                    }
+                }
+                .by-cms {
+                    color: $main-green;
+                    transition: .4s ease;
+                }
+            }
+        }
+
+        .right-side {
+            text-transform: capitalize;
+            text-align: left;
+            padding: 30px;
+            ul {
+                li {
+                    position: relative;
+                    padding: 0 16px;
+                    a {
+                        color: #282828;
+                        transition: .4s ease;
+
+                        &:hover {
+                            color: $main-green;
+                        }
+                    }
+
+                    &.middle {
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            left: -2px;
+                            transform: translateY(-50%);
+                            width: 4px;
+                            height: 1px;
+                            background-color: #222;
+                        }
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            right: -2px;
+                            transform: translateY(-50%);
+                            width: 4px;
+                            height: 1px;
+                            background-color: #222;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes up {
+    0%
+    {
+        top: 25px;
+    }
+    50%
+    {
+        top: 15px;
+    }
+    100%
+    {
+        top: 24px;
     }
 }
 
@@ -182,7 +302,17 @@
 
     .footer {
         .project {
-            text-align: left;
+            text-align: left !important;
+        }
+        .copyright {
+            .left-side {
+                text-align: center !important;
+            }
+            .right-side {
+                ul {
+                    justify-content: center;
+                }
+            }
         }
     }
 }
