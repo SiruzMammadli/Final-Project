@@ -369,9 +369,23 @@ ul {
 }
 
 .header .wrapper .logo {
-  width: 158px;
   margin: 0 20px;
   padding: 15px 0;
+  cursor: pointer;
+}
+
+.header .wrapper .logo .firstPic {
+  display: block;
+  width: 158px;
+}
+
+.header .wrapper .logo .secondPic {
+  display: none;
+  width: 44px;
+}
+
+.header .wrapper .menu {
+  display: block;
 }
 
 .header .wrapper .menu ul {
@@ -726,6 +740,10 @@ ul {
   padding: 0 8px;
 }
 
+.header .wrapper .contact .call .number {
+  display: block;
+}
+
 .header .wrapper .contact .call .number a {
   display: block;
   padding: 0 8px;
@@ -740,6 +758,75 @@ ul {
   color: #C6C8C9;
   font-size: 14px;
   font-weight: 700;
+}
+
+.header .wrapper .contact .call .hamburger {
+  display: none;
+}
+
+@media (max-width: 1448px) {
+  .header .wrapper .logo .firstPic {
+    display: none;
+  }
+  .header .wrapper .logo .secondPic {
+    display: block;
+  }
+  .header .wrapper .menu {
+    display: none;
+  }
+  .header .wrapper .contact .btn-white {
+    display: none;
+  }
+  .header .wrapper .contact .cart {
+    margin-right: 0;
+  }
+  .header .wrapper .contact .call {
+    margin-left: 0;
+  }
+  .header .wrapper .contact .call .number {
+    display: none;
+  }
+  .header .wrapper .contact .call .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .wrapper .contact .call .hamburger .lang {
+    position: relative;
+  }
+  .header .wrapper .contact .call .hamburger .lang img {
+    width: 32px;
+    height: 20px;
+    margin: 0 10px 0 5px;
+    cursor: pointer;
+  }
+  .header .wrapper .contact .call .hamburger .lang:hover .flag {
+    opacity: 1;
+    visibility: visible;
+  }
+  .header .wrapper .contact .call .hamburger .lang .flag {
+    position: absolute;
+    bottom: -38px;
+    left: 0;
+    background-color: white;
+    border-radius: 6px;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .header .wrapper .contact .call .hamburger .lang .flag .flagPic {
+    margin: 8px 5px;
+  }
+  .header .wrapper .contact .call .hamburger .bar {
+    font-size: 24px;
+    color: white;
+    margin-left: 5px;
+    cursor: pointer;
+  }
 }
 
 body {

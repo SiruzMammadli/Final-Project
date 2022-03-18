@@ -1,5 +1,7 @@
 @import '_global';
 
+// HEADER START
+
 .header {
     position: absolute;
     width: 100%;
@@ -14,11 +16,21 @@
         height: 110px;
 
         .logo {
-            width: 158px;
             margin: 0 20px;
             padding: 15px 0;
+            cursor: pointer;
+
+            .firstPic {
+                display: block;
+                width: 158px;
+            }
+            .secondPic {
+                display: none;
+                width: 44px;
+            }
         }
         .menu {
+            display: block;
             ul {
                 padding: 0 20px;
                 li {
@@ -349,6 +361,7 @@
                     padding: 0 8px;
                 }
                 .number {
+                    display: block;
                     a {
                         display: block;
                         padding: 0 8px;
@@ -364,7 +377,91 @@
                         }
                     }
                 }
+                .hamburger {
+                    display: none;
+                }
             }
         }
     }
 }
+
+// HEADER RESPONSIVE
+
+@media (max-width: 1448px){
+
+    .header {
+        .wrapper {
+            .logo {
+                .firstPic {
+                    display: none;
+                }
+                .secondPic {
+                    display: block;
+                }
+            }
+
+            .menu {
+                display: none;
+            }
+
+            .contact {
+                .btn-white {
+                    display: none;
+                }
+
+                .cart {
+                    margin-right: 0;
+                }
+                .call {
+                    margin-left: 0;
+                    .number {
+                        display: none;
+                    }
+                    .hamburger {
+                        display: flex;
+                        align-items: center;
+                        .lang {
+                            position: relative;
+                            img {
+                                width: 32px;
+                                height: 20px;
+                                margin: 0 10px 0 5px;
+                                cursor: pointer;
+                            }
+
+                            &:hover {
+                                .flag {
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+                            }
+
+                            .flag {
+                                position: absolute;
+                                bottom: -38px;
+                                left: 0;
+                                background-color: $white-color;
+                                border-radius: 6px;
+                                transition: .3s ease;
+                                opacity: 0;
+                                visibility: hidden;
+
+                                .flagPic {
+                                    margin: 8px 5px;
+                                }
+                            }
+                        }
+                        .bar {
+                            font-size: 24px;
+                            color: $white-color;
+                            margin-left: 5px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// HEADER END
