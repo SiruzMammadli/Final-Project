@@ -48,14 +48,27 @@
 
                         &.active {
                             span {
-                                &::before {
-                                    content: '';
-                                    position: absolute;
-                                    bottom: 0;
-                                    left: 0;
-                                    width: 55px;
-                                    height: 4px;
-                                    background-color: $main-green;
+                                &.hm {
+                                    &::before {
+                                        content: '';
+                                        position: absolute;
+                                        bottom: 0;
+                                        left: 0;
+                                        width: 55px;
+                                        height: 4px;
+                                        background-color: $main-green;
+                                    }
+                                }
+                                &.s-i {
+                                    &::before {
+                                        content: '';
+                                        position: absolute;
+                                        bottom: 0;
+                                        left: 0;
+                                        width: 159.5px;
+                                        height: 4px;
+                                        background-color: $main-green;
+                                    }
                                 }
                             }
                         }
