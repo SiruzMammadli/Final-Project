@@ -9,6 +9,63 @@
     top: 0;
     z-index: 999;
     border-bottom: 1px solid rgba(234,234,234, .15);
+
+    &.white {
+        position: static;
+        background-color: $white-color;
+        box-shadow: 0px 5px 83px 0px rgba(27,26,26, .12);
+
+        .wrapper {
+            .menu {
+                ul {
+                    li {
+                        a {
+                            color: $dark-color;
+                            font-weight: 700;
+                            transition: .4s ease;
+
+                            &:hover {
+                                color: $main-green;
+                            }
+                        }
+                    }
+                }
+            }
+            .contact {
+                a {
+                    &.btn-dark {
+                        padding: 22px 30px;
+                        margin: 0 10px;
+                    }
+                    &.search {
+                        color: $dark-color;
+                    }
+                }
+                .cart {
+                    span {
+                        color: $dark-color;
+                        &.zero {
+                            color: $white-color;
+                        }
+                    }
+                }
+                .call {
+                    .number {
+                        a {
+                            &.knock {
+                                color: $dark-color;
+                            }
+                            &.mail {
+                                color: $grey-p-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
     .wrapper {
         display: flex;
         align-items: center;
@@ -81,6 +138,17 @@
                                         background-color: $main-green;
                                     }
                                 }
+                                &.n-m {
+                                    &::before {
+                                        content: '';
+                                        position: absolute;
+                                        bottom: 0;
+                                        left: 0;
+                                        width: 112px;
+                                        height: 4px;
+                                        background-color: $main-green;
+                                    }
+                                }
                             }
                         }
 
@@ -121,6 +189,7 @@
                         }
 
                         .dropMenu {
+                            z-index: 100;
                             position: absolute;
                             top: 100%;
                             left: 0;
@@ -218,6 +287,7 @@
                         }
                         .dropWrapper {
                             .dropMenu {
+                                z-index: 100;
                                 position: absolute;
                                 top: 100%;
                                 left: 0;
@@ -393,6 +463,7 @@
                         &.knock {
                             font-size: 20px;
                             color: $white-color;
+                            letter-spacing: .5px;
                         }
                         &.mail {
                             color: $grey-color1;
@@ -430,6 +501,10 @@
 
             .contact {
                 .btn-white {
+                    display: none;
+                }
+
+                .btn-dark {
                     display: none;
                 }
 
@@ -480,6 +555,10 @@
                             color: $white-color;
                             margin-left: 5px;
                             cursor: pointer;
+
+                            &.white {
+                                color: $dark-color;
+                            }
                         }
                     }
                 }
