@@ -2180,6 +2180,199 @@ ul {
   background-color: #1873EB;
 }
 
+.population {
+  background-color: #161616;
+}
+
+.population .wrapper {
+  padding: 100px 0;
+  color: white;
+}
+
+.population .wrapper .popu-title {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.population .wrapper .popu-title span {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.population .wrapper .popu-title h2 {
+  font-size: 37px;
+  font-weight: 700;
+}
+
+.population .wrapper .essential {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 60px;
+}
+
+.population .wrapper .essential .half-box {
+  width: 50%;
+  padding: 20px;
+  display: block;
+}
+
+.population .wrapper .essential .half-box span {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #65B530;
+  margin-bottom: 15px;
+}
+
+.population .wrapper .essential .half-box h2 {
+  font-size: 37px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.population .wrapper .essential .half-box p {
+  margin-top: 35px;
+  font-size: 17px;
+  color: #c6c6c6;
+}
+
+.population .wrapper .essential .half-box .checks {
+  position: relative;
+  padding-top: 25px;
+  margin-left: -22px;
+}
+
+.population .wrapper .essential .half-box .checks span {
+  color: white;
+  font-size: 16px;
+  padding: 0 10px 0 22px;
+}
+
+.population .wrapper .essential .half-box .checks i {
+  font-size: 12px;
+  color: #65B530;
+  position: absolute;
+  -webkit-transform: translateY(7px);
+          transform: translateY(7px);
+}
+
+.population .wrapper .essential .half-box .btn-green.mt-50 {
+  margin-top: 40px;
+}
+
+.population .wrapper .essential .half-box .btn-green i {
+  font-size: 14px;
+  -webkit-transform: translate(3px, 0);
+          transform: translate(3px, 0);
+}
+
+.population .wrapper .essential .half-box.two {
+  position: relative;
+  padding-left: 150px;
+  display: block;
+}
+
+.population .wrapper .essential .half-box img {
+  border-radius: 4px;
+}
+
+.population .wrapper .essential .half-box .protect {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(25px, -50%);
+          transform: translate(25px, -50%);
+  background-color: white;
+  width: 260px;
+  padding: 40px;
+}
+
+.population .wrapper .essential .half-box .protect span {
+  font-size: 14px;
+  color: #9B9B9B;
+}
+
+.population .wrapper .essential .half-box .protect h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1B1A1A;
+}
+
+.population .wrapper .essential .half-box .protect .checks {
+  padding-top: 28px;
+  margin: 0;
+}
+
+.population .wrapper .essential .half-box .protect .checks span {
+  font-weight: 400;
+}
+
+.population .wrapper .essential .half-box .protect .checks i {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+.population .wrapper .essential.two .half-box.two {
+  padding: 20px 150px 20px 20px;
+}
+
+.population .wrapper .essential.two .half-box.two .protect.two {
+  left: auto;
+  right: 50px;
+  background-color: #65B530;
+}
+
+.population .wrapper .essential.two .half-box.two .protect.two span, .population .wrapper .essential.two .half-box.two .protect.two h3, .population .wrapper .essential.two .half-box.two .protect.two i {
+  color: white;
+}
+
+.population .wrapper .essential.two .half-box.four {
+  padding-left: 70px;
+}
+
+.population .wrapper .essential.two .half-box.four .rating {
+  padding-top: 75px;
+  width: 78%;
+}
+
+.population .wrapper .essential.two .half-box.four .rating .text {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.population .wrapper .essential.two .half-box.four .rating .stars {
+  display: inline-block;
+  color: #FFC400;
+  padding-right: 10px;
+}
+
+.population .wrapper .essential.two .half-box.four .rating .stars i {
+  font-size: 13px;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+.population .wrapper .essential.two .half-box.four .rating .author {
+  display: inline-block;
+  padding-left: 10px;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.population .wrapper .essential .respons {
+  display: none;
+}
+
 @media (max-width: 576px) {
   .bss-secur {
     min-height: 100vh;
@@ -2246,6 +2439,27 @@ ul {
   }
   .smarter .mainContent .leftBars.two {
     display: block;
+  }
+  .population .wrapper h2 {
+    font-size: 30px !important;
+  }
+  .population .wrapper .popu-title {
+    width: 100%;
+  }
+  .population .wrapper .essential .half-box {
+    display: none;
+  }
+  .population .wrapper .essential .four {
+    display: block;
+    width: 100%;
+    padding: 20px !important;
+  }
+  .population .wrapper .essential .respons {
+    display: block;
+    width: 100%;
+  }
+  .population .wrapper .essential .two {
+    width: 100%;
   }
 }
 

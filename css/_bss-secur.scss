@@ -563,6 +563,185 @@
     }
 }
 
+// POPULATION SECTION
+
+.population {
+    background-color: #161616;
+    .wrapper {
+        padding: 100px 0;
+        color: $white-color;
+        .popu-title {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            span {
+                display: block;
+                font-size: 16px;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+            h2 {
+                font-size: 37px;
+                font-weight: 700;
+            }
+        }
+        .essential {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 60px;
+
+            // FIRST PLACE
+
+            .half-box {
+                width: 50%;
+                padding: 20px;
+                display: block;
+
+                // LEFT SIDE
+                span {
+                    display: block;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $main-green;
+                    margin-bottom: 15px;
+                }
+                h2 {
+                    font-size: 37px;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                }
+                p {
+                    margin-top: 35px;
+                    font-size: 17px;
+                    color: #c6c6c6;
+                }
+                .checks {
+                    position: relative;
+                    padding-top: 25px;
+                    margin-left: -22px;
+                    span {
+                        color: $white-color;
+                        font-size: 16px;
+                        padding: 0 10px 0 22px;
+                    }
+                    i {
+                        font-size: 12px;
+                        color: $main-green;
+                        position: absolute;
+                        transform: translateY(7px);
+                    }
+                }
+                .btn-green {
+                    &.mt-50 {
+                        margin-top: 40px;
+                    }
+
+                    i {
+                        font-size: 14px;
+                        transform: translate(3px, 0);
+                    }
+                }
+
+                // RIGHT SIDE
+                &.two {
+                    position: relative;
+                    padding-left: 150px;
+                    display: block;
+                }
+
+                img {
+                    border-radius: 4px;
+                }
+
+                .protect {
+                    position: absolute;
+                    top: 50%; left: 0;
+                    transform: translate(25px, -50%);
+                    background-color: $white-color;
+                    width: 260px;
+                    padding: 40px;
+
+                    span {
+                        font-size: 14px;
+                        color: $grey-p-color;
+                    }
+
+                    h3 {
+                        font-size: 22px;
+                        font-weight: 700;
+                        color: $dark-color;
+                    }
+
+                    .checks {
+                        padding-top: 28px;
+                        margin: 0;
+                        span {
+                            font-weight: 400;
+                        }
+                        i {
+                            transform: translateY(4px);
+                        }
+                    }
+                }
+            }
+
+            &.two {
+                .half-box {
+                    &.two {
+                        padding: 20px 150px 20px 20px;
+
+                        .protect {
+                            &.two {
+                                left: auto; right: 50px;
+                                background-color: $main-green;
+
+                                span, h3, i {
+                                    color: $white-color;
+                                }
+                            }
+                        }
+                    }
+                    &.four {
+                        padding-left: 70px;
+
+                        .rating {
+                            padding-top: 75px;
+                            width: 78%;
+                            .text {
+                                font-size: 18px;
+                                font-weight: 400;
+                                letter-spacing: 1px;
+                                color: $white-color;
+                                margin-bottom: 25px;
+                            }
+                            .stars {
+                                display: inline-block;
+                                color: #FFC400;
+                                padding-right: 10px;
+                                i {
+                                    font-size: 13px;
+                                    transform: translateY(-1px);
+                                }
+                            }
+                            .author {
+                                display: inline-block;
+                                padding-left: 10px;
+                                color: $white-color;
+                                font-size: 15px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .respons {
+                display: none;
+            }
+        }
+    }
+}
+
 @media (max-width: 576px) {
     .bss-secur {
         min-height: 100vh;
@@ -592,7 +771,6 @@
         }
     }
 }
-
 
 @media (min-width: 576px) and (max-width: 992px) {
     .bss-secur {
@@ -662,6 +840,40 @@
 
                 &.two {
                     display: block;
+                }
+            }
+        }
+    }
+
+    .population {
+        .wrapper {
+
+            h2 {
+                font-size: 30px !important;
+            }
+
+            .popu-title {
+                width: 100%;
+            }
+
+            .essential {
+                .half-box {
+                    display: none;
+                }
+
+                .four {
+                    display: block;
+                    width: 100%;
+                    padding: 20px !important;
+                }
+
+                .respons {
+                    display: block;
+                    width: 100%;
+                }
+
+                .two {
+                    width: 100%;
                 }
             }
         }
