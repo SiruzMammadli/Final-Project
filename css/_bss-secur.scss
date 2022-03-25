@@ -3,7 +3,7 @@
 .bss-secur {
     position: relative;
     width: 100%;
-    height: 110vh;
+    min-height: 100vh;
     background: url('https://demo.cmssuperheroes.com/themeforest/sekure/wp-content/uploads/Smarter-Business-Security-scaled.jpg') no-repeat;
     background-position-y: 67%;
     background-size: cover;
@@ -171,6 +171,10 @@
             flex-wrap: wrap;
             flex-direction: column;
             gap: 40px;
+
+            &.two {
+                display: none;
+            }
 
             .pd-50 {
                 padding: 50px;
@@ -354,6 +358,10 @@
                     font-weight: 600;
                     margin-bottom: 25px;
                     color: $dark-color;
+
+                    &.m-15 {
+                        margin-bottom: 15px;
+                    }
                 }
                 p {
                     color: $grey-p-color;
@@ -430,6 +438,126 @@
                         padding: 20px 0 20px 20px;
                     }
                 }
+
+                .benifits {
+                    margin: 30px 0;
+
+                    .questions {
+                        border-top: 4px solid $main-green;
+                        margin-top: 30px;
+                        .question {
+                            padding: 21px 0;
+                            border-bottom: 2px solid #eaeaea;
+                            cursor: pointer;
+
+                            &:hover {
+                                span {
+                                    background-color: $main-green;
+                                }
+
+                                a {
+                                    color: $main-green;
+                                }
+                            }
+
+                            span {
+                                display: inline-block;
+                                width: 22px; height: 22px;
+                                border-radius: 50%;
+                                text-align: center;
+                                line-height: 19px;
+                                margin-right: 10px;
+                                transform: translateY(-3px);
+                                background-color: $dark-color;
+                                transition: .4s ease;
+
+                                i {
+                                    font-size: 9px;
+                                    color: $white-color;
+                                }
+
+                                &.green {
+                                    background-color: $main-green;
+                                }
+                            }
+
+                            a {
+                                font-size: 19px;
+                                font-weight: 700;
+                                color: $dark-color;
+                                transition: .4s ease;
+
+                                &.grn-link {
+                                    color: $main-green;
+                                }
+                            }
+
+                            .stat {
+                                padding: 15px 0 0 36px;
+                                font-size: 15px;
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+
+                .charts {
+                    padding-top: 30px;
+
+                    .pie {
+                        position: relative;
+                        width: 397px; height: 397px;
+                        margin: 0 auto;
+                        border-radius: 50%;
+                        background-image: conic-gradient(#9BCB3B 0deg 105deg, #5553CE 105deg 180deg, #F13A30 180deg 235deg, #F8A137 235deg 285deg, #1875F0 285deg 360deg);
+
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            width: 50%; height: 50%;
+                            top: 50%; left: 50%;
+                            transform: translate(-50%,-50%);
+                            background-color: $white-color;
+                            border-radius: 50%;
+                        }
+                    }
+                    .parts {
+                        margin-top: 20px;
+                        padding-left: 27px;
+                        width: 100%;
+                        .pie-chart {
+                            display: inline-block;
+                            width: 48.7%;
+                            padding: 0 10px;
+                            font-size: 14px;
+                            font-weight: 600;
+                            color: $grey-p-color;
+
+                            span {
+                                display: inline-block;
+                                width: 10px; height: 10px;
+                                border-radius: 50%;
+                                margin-right: 5px;
+
+                                &.grn {
+                                    background-color: #9BCB3B;
+                                }
+                                &.prpl {
+                                    background-color: #5553CE;
+                                }
+                                &.red {
+                                    background-color: #F13A30;
+                                }
+                                &.orang {
+                                    background-color: #F8A137;
+                                }
+                                &.blue {
+                                    background-color: #1873EB;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -437,7 +565,7 @@
 
 @media (max-width: 576px) {
     .bss-secur {
-        height: 120vh;
+        min-height: 100vh;
         .overlay-gradient {
             .titles {
                 h1 {
@@ -489,6 +617,51 @@
                 h1 {
                     width: 100%;
                     font-size: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .smarter {
+        .mainContent {
+            .content {
+                .overview {
+                    .cams {
+                        text-align: center;
+                        .left-cam-img {
+                            width: 100%;
+                        }
+                        .right-cam-img {
+                            width: 100%;
+                        }
+                    }
+
+                    .charts {
+                        .parts {
+                            .pie-chart {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .smarter {
+        .mainContent {
+            .leftBars {
+                display: none;
+                .serviceBar, .solition, .brochure {
+                    margin-bottom: 50px;
+                }
+
+                &.two {
+                    display: block;
                 }
             }
         }

@@ -1563,7 +1563,7 @@ ul {
 .bss-secur {
   position: relative;
   width: 100%;
-  height: 110vh;
+  min-height: 100vh;
   background: url("https://demo.cmssuperheroes.com/themeforest/sekure/wp-content/uploads/Smarter-Business-Security-scaled.jpg") no-repeat;
   background-position-y: 67%;
   background-size: cover;
@@ -1755,6 +1755,10 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 40px;
+}
+
+.smarter .mainContent .leftBars.two {
+  display: none;
 }
 
 .smarter .mainContent .leftBars .pd-50 {
@@ -1952,6 +1956,10 @@ ul {
   color: #1B1A1A;
 }
 
+.smarter .mainContent .content .overview h3.m-15 {
+  margin-bottom: 15px;
+}
+
 .smarter .mainContent .content .overview p {
   color: #9B9B9B;
   font-size: 17px;
@@ -2038,9 +2046,143 @@ ul {
   padding: 20px 0 20px 20px;
 }
 
+.smarter .mainContent .content .overview .benifits {
+  margin: 30px 0;
+}
+
+.smarter .mainContent .content .overview .benifits .questions {
+  border-top: 4px solid #65B530;
+  margin-top: 30px;
+}
+
+.smarter .mainContent .content .overview .benifits .questions .question {
+  padding: 21px 0;
+  border-bottom: 2px solid #eaeaea;
+  cursor: pointer;
+}
+
+.smarter .mainContent .content .overview .benifits .questions .question:hover span {
+  background-color: #65B530;
+}
+
+.smarter .mainContent .content .overview .benifits .questions .question:hover a {
+  color: #65B530;
+}
+
+.smarter .mainContent .content .overview .benifits .questions .question span {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 19px;
+  margin-right: 10px;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  background-color: #1B1A1A;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.smarter .mainContent .content .overview .benifits .questions .question span i {
+  font-size: 9px;
+  color: white;
+}
+
+.smarter .mainContent .content .overview .benifits .questions .question span.green {
+  background-color: #65B530;
+}
+
+.smarter .mainContent .content .overview .benifits .questions .question a {
+  font-size: 19px;
+  font-weight: 700;
+  color: #1B1A1A;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.smarter .mainContent .content .overview .benifits .questions .question a.grn-link {
+  color: #65B530;
+}
+
+.smarter .mainContent .content .overview .benifits .questions .question .stat {
+  padding: 15px 0 0 36px;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.smarter .mainContent .content .overview .charts {
+  padding-top: 30px;
+}
+
+.smarter .mainContent .content .overview .charts .pie {
+  position: relative;
+  width: 397px;
+  height: 397px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-image: conic-gradient(#9BCB3B 0deg 105deg, #5553CE 105deg 180deg, #F13A30 180deg 235deg, #F8A137 235deg 285deg, #1875F0 285deg 360deg);
+}
+
+.smarter .mainContent .content .overview .charts .pie::before {
+  position: absolute;
+  content: '';
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 50%;
+}
+
+.smarter .mainContent .content .overview .charts .parts {
+  margin-top: 20px;
+  padding-left: 27px;
+  width: 100%;
+}
+
+.smarter .mainContent .content .overview .charts .parts .pie-chart {
+  display: inline-block;
+  width: 48.7%;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #9B9B9B;
+}
+
+.smarter .mainContent .content .overview .charts .parts .pie-chart span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.smarter .mainContent .content .overview .charts .parts .pie-chart span.grn {
+  background-color: #9BCB3B;
+}
+
+.smarter .mainContent .content .overview .charts .parts .pie-chart span.prpl {
+  background-color: #5553CE;
+}
+
+.smarter .mainContent .content .overview .charts .parts .pie-chart span.red {
+  background-color: #F13A30;
+}
+
+.smarter .mainContent .content .overview .charts .parts .pie-chart span.orang {
+  background-color: #F8A137;
+}
+
+.smarter .mainContent .content .overview .charts .parts .pie-chart span.blue {
+  background-color: #1873EB;
+}
+
 @media (max-width: 576px) {
   .bss-secur {
-    height: 120vh;
+    min-height: 100vh;
   }
   .bss-secur .overlay-gradient .titles h1 {
     width: 100%;
@@ -2077,6 +2219,33 @@ ul {
   .bss-secur .overlay-gradient .titles h1 {
     width: 100%;
     font-size: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .smarter .mainContent .content .overview .cams {
+    text-align: center;
+  }
+  .smarter .mainContent .content .overview .cams .left-cam-img {
+    width: 100%;
+  }
+  .smarter .mainContent .content .overview .cams .right-cam-img {
+    width: 100%;
+  }
+  .smarter .mainContent .content .overview .charts .parts .pie-chart {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .smarter .mainContent .leftBars {
+    display: none;
+  }
+  .smarter .mainContent .leftBars .serviceBar, .smarter .mainContent .leftBars .solition, .smarter .mainContent .leftBars .brochure {
+    margin-bottom: 50px;
+  }
+  .smarter .mainContent .leftBars.two {
+    display: block;
   }
 }
 
