@@ -614,6 +614,10 @@
                     margin-top: 35px;
                     font-size: 17px;
                     color: #c6c6c6;
+
+                    &.wdth {
+                        width: 89%;
+                    }
                 }
                 .checks {
                     position: relative;
@@ -737,6 +741,161 @@
 
             .respons {
                 display: none;
+            }
+
+            &.three {
+                .three {
+                    .btns {
+                        margin-top: 50px;
+
+                        .btn-white {
+                            padding: 18px 30px;
+                            margin: 0 15px 15px 0;
+                            border-radius: 29px;
+                        }
+                    }
+                    .contact-us {
+                        padding-top: 40px;
+                        p {
+                            color: $grey-color1;
+                            font-size: 15px;
+                            font-weight: 700;
+                            margin: 0;
+
+                            a {
+                                position: relative;
+                                color: $main-green;
+                                padding: 0 5px;
+                                transition: .4s ease;
+
+                                &:hover {
+                                    color: $white-color;
+                                }
+
+                                &::before {
+                                    content: '';
+                                    position: absolute;
+                                    bottom: -2px; left: 5px;
+                                    width: 92%; height: 1px;
+                                    background-color: $main-green;
+                                }
+                            }
+                        }
+                    }
+                }
+                .disp {
+                    display: flex;
+                    justify-content: flex-end;
+
+                    .pic {
+                        position: relative;
+
+                        .pulse {
+                            position: absolute;
+                            top: 50%; left: 50%;
+                            transform: translate(-50%,-50%);
+                            width: 82px; height: 82px;
+                            animation: pulse3 3s linear infinite;
+
+                            &::before {
+                                width: 82px; height: 82px;
+                                animation: pulse4 3s linear infinite;
+                                animation-delay: .3s;
+                            }
+
+                            &::after {
+                                width: 62px; height: 62px;
+                                background-color: $white-color;
+                            }
+                            i {
+                                color: $dark-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .unique {
+            width: 58%;
+            text-align: center;
+            margin: 0 auto;
+            padding: 130px 0 20px;
+
+            h2 {
+                font-size: 42px;
+                font-weight: 700;
+                color: $white-color;
+                margin: auto; padding-bottom: 30px;
+                width: 90%;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 700;
+                color: $white-color;
+            }
+
+            .discover {
+                position: relative;
+                padding-top: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .phone {
+                    display: flex;
+                    align-items: center;
+                    padding: 0 20px;
+
+                    .pulse {
+                        margin: 0 10px;
+                        position: relative;
+                        width: 68px; height: 68px;
+                        animation: pulse3 3s linear infinite;
+    
+                        &::before {
+                            width: 68px; height: 68px;
+                            animation: pulse4 3s linear infinite;
+                            animation-delay: .3s;
+                        }
+    
+                        &::after {
+                            width: 48px; height: 48px;
+                            background-color: $white-color;
+                        }
+                        i {
+                            color: $dark-color;
+                        }
+                    }
+
+                    .numb {
+                        text-align: left;
+                        margin-left: 5px;
+                        p {
+                            margin: 0;
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: $white-color;
+                        }
+                        span {
+                            color: $white-color;
+                            font-size: 23px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+
+                .btn-green {
+
+                    &:hover {
+                        background-color: $white-color;
+                        color: $main-green;
+                    }
+                    i {
+                        transform: translate(6px, 1px);
+                    }
+                }
             }
         }
     }
@@ -875,6 +1034,14 @@
                 .two {
                     width: 100%;
                 }
+
+                .disp {
+                    justify-content: center !important;
+                }
+            }
+
+            .unique {
+                width: 100%;
             }
         }
     }

@@ -2242,6 +2242,10 @@ ul {
   color: #c6c6c6;
 }
 
+.population .wrapper .essential .half-box p.wdth {
+  width: 89%;
+}
+
 .population .wrapper .essential .half-box .checks {
   position: relative;
   padding-top: 25px;
@@ -2373,6 +2377,195 @@ ul {
   display: none;
 }
 
+.population .wrapper .essential.three .three .btns {
+  margin-top: 50px;
+}
+
+.population .wrapper .essential.three .three .btns .btn-white {
+  padding: 18px 30px;
+  margin: 0 15px 15px 0;
+  border-radius: 29px;
+}
+
+.population .wrapper .essential.three .three .contact-us {
+  padding-top: 40px;
+}
+
+.population .wrapper .essential.three .three .contact-us p {
+  color: #C6C8C9;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.population .wrapper .essential.three .three .contact-us p a {
+  position: relative;
+  color: #65B530;
+  padding: 0 5px;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.population .wrapper .essential.three .three .contact-us p a:hover {
+  color: white;
+}
+
+.population .wrapper .essential.three .three .contact-us p a::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 5px;
+  width: 92%;
+  height: 1px;
+  background-color: #65B530;
+}
+
+.population .wrapper .essential.three .disp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.population .wrapper .essential.three .disp .pic {
+  position: relative;
+}
+
+.population .wrapper .essential.three .disp .pic .pulse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 82px;
+  height: 82px;
+  -webkit-animation: pulse3 3s linear infinite;
+          animation: pulse3 3s linear infinite;
+}
+
+.population .wrapper .essential.three .disp .pic .pulse::before {
+  width: 82px;
+  height: 82px;
+  -webkit-animation: pulse4 3s linear infinite;
+          animation: pulse4 3s linear infinite;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.population .wrapper .essential.three .disp .pic .pulse::after {
+  width: 62px;
+  height: 62px;
+  background-color: white;
+}
+
+.population .wrapper .essential.three .disp .pic .pulse i {
+  color: #1B1A1A;
+}
+
+.population .wrapper .unique {
+  width: 58%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 130px 0 20px;
+}
+
+.population .wrapper .unique h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: white;
+  margin: auto;
+  padding-bottom: 30px;
+  width: 90%;
+}
+
+.population .wrapper .unique p {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+
+.population .wrapper .unique .discover {
+  position: relative;
+  padding-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.population .wrapper .unique .discover .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+}
+
+.population .wrapper .unique .discover .phone .pulse {
+  margin: 0 10px;
+  position: relative;
+  width: 68px;
+  height: 68px;
+  -webkit-animation: pulse3 3s linear infinite;
+          animation: pulse3 3s linear infinite;
+}
+
+.population .wrapper .unique .discover .phone .pulse::before {
+  width: 68px;
+  height: 68px;
+  -webkit-animation: pulse4 3s linear infinite;
+          animation: pulse4 3s linear infinite;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.population .wrapper .unique .discover .phone .pulse::after {
+  width: 48px;
+  height: 48px;
+  background-color: white;
+}
+
+.population .wrapper .unique .discover .phone .pulse i {
+  color: #1B1A1A;
+}
+
+.population .wrapper .unique .discover .phone .numb {
+  text-align: left;
+  margin-left: 5px;
+}
+
+.population .wrapper .unique .discover .phone .numb p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+}
+
+.population .wrapper .unique .discover .phone .numb span {
+  color: white;
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.population .wrapper .unique .discover .btn-green:hover {
+  background-color: white;
+  color: #65B530;
+}
+
+.population .wrapper .unique .discover .btn-green i {
+  -webkit-transform: translate(6px, 1px);
+          transform: translate(6px, 1px);
+}
+
 @media (max-width: 576px) {
   .bss-secur {
     min-height: 100vh;
@@ -2459,6 +2652,14 @@ ul {
     width: 100%;
   }
   .population .wrapper .essential .two {
+    width: 100%;
+  }
+  .population .wrapper .essential .disp {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .population .wrapper .unique {
     width: 100%;
   }
 }
