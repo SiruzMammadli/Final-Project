@@ -1067,6 +1067,74 @@
             }
             &.w-40 {
                 width: calc(100% - 59.5%);
+
+                .bording {
+                    margin: 0;
+                    padding-bottom: 23px;
+                    border-bottom: 2px solid $dark-color;
+                }
+
+                p {
+                    padding: 0;
+                    margin: 35px 0 0;
+                }
+                .icons {
+                    margin: 30px 0;
+                    i {
+                        font-size: 64px;
+                        color: $main-green;
+                        opacity: .9;
+                        padding: 0 15px;
+                        margin-left: -15px;
+                    }
+                }
+                .price-feature {
+                    ul {
+                        li {
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            padding-bottom: 17px;
+                            font-size: 16px;
+                            font-weight: 700;
+                            gap: 15px;
+
+                            span {
+                                display: block;
+                                width: 26px; height: 26px;
+                                border: 3px solid $grey-p-color;
+                                border-radius: 50%;
+                                text-align: center;
+                                line-height: 20px;
+
+                                i {
+                                    color: $main-green;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .pricing {
+                    padding-top: 45px;
+                    color: $dark-color;
+
+                    .dollar {
+                        font-size: 40px;
+                        font-weight: 700;
+                    }
+                    .month {
+                        font-size: 18px;
+                    }
+                }
+                .btn-green {
+                    margin-top: 30px;
+
+                    i {
+                        font-size: 14px;
+                        transform: translateX(5px);
+                    }
+                }
             }
 
             h3 {
@@ -1415,6 +1483,9 @@
 
                 &.w-59 {
                     box-shadow: none;
+                }
+                &.w-40 {
+                    padding: 40px 20px !important;
                 }
             }
         }

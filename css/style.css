@@ -2768,6 +2768,83 @@ ul {
   width: calc(100% - 59.5%);
 }
 
+.request .wrapper .widget-wrap.w-40 .bording {
+  margin: 0;
+  padding-bottom: 23px;
+  border-bottom: 2px solid #1B1A1A;
+}
+
+.request .wrapper .widget-wrap.w-40 p {
+  padding: 0;
+  margin: 35px 0 0;
+}
+
+.request .wrapper .widget-wrap.w-40 .icons {
+  margin: 30px 0;
+}
+
+.request .wrapper .widget-wrap.w-40 .icons i {
+  font-size: 64px;
+  color: #65B530;
+  opacity: .9;
+  padding: 0 15px;
+  margin-left: -15px;
+}
+
+.request .wrapper .widget-wrap.w-40 .price-feature ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 17px;
+  font-size: 16px;
+  font-weight: 700;
+  gap: 15px;
+}
+
+.request .wrapper .widget-wrap.w-40 .price-feature ul li span {
+  display: block;
+  width: 26px;
+  height: 26px;
+  border: 3px solid #9B9B9B;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+}
+
+.request .wrapper .widget-wrap.w-40 .price-feature ul li span i {
+  color: #65B530;
+  font-size: 12px;
+}
+
+.request .wrapper .widget-wrap.w-40 .pricing {
+  padding-top: 45px;
+  color: #1B1A1A;
+}
+
+.request .wrapper .widget-wrap.w-40 .pricing .dollar {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.request .wrapper .widget-wrap.w-40 .pricing .month {
+  font-size: 18px;
+}
+
+.request .wrapper .widget-wrap.w-40 .btn-green {
+  margin-top: 30px;
+}
+
+.request .wrapper .widget-wrap.w-40 .btn-green i {
+  font-size: 14px;
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+}
+
 .request .wrapper .widget-wrap h3 {
   font-size: 26px;
   font-weight: 700;
@@ -3085,6 +3162,9 @@ ul {
   .request .wrapper .widget-wrap.w-59 {
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+  .request .wrapper .widget-wrap.w-40 {
+    padding: 40px 20px !important;
   }
 }
 
