@@ -1026,6 +1026,219 @@
     }
 }
 
+.request {
+    padding: 110px 0;
+    position: relative;
+    z-index: 1;
+
+    .overlay-bg {
+        position: absolute;
+        top: 0; bottom: 0;
+        left: 0; right: 0;
+        background-image: url('https://demo.cmssuperheroes.com/themeforest/sekure/wp-content/uploads/Access-Control-Installation.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0; bottom: 0;
+            left: 0; right: 0;
+            background-color: #65b530c2;
+        }
+    }
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .widget-wrap {
+            background-color: $white-color;
+            padding: 80px;
+
+            &.w-59 {
+                width: 59.5%;
+                box-shadow: 0px 5px 83px 0px rgba(27,26,26, 0.28);
+                z-index: 3;
+                padding: 80px 100px;
+            }
+            &.w-40 {
+                width: calc(100% - 59.5%);
+            }
+
+            h3 {
+                font-size: 26px;
+                font-weight: 700;
+                text-transform: capitalize;
+                color: $dark-color;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 15px;
+                color: $grey-p-color;
+                padding-bottom: 20px;
+
+                a {
+                    color: $dark-color;
+                    font-weight: 700;
+                }
+            }
+
+            .selects {
+                text-transform: capitalize;
+                .bord-field {
+                    border: 2px solid #eaeaea;
+                    transition: .4s ease;
+                    position: relative;
+                    margin: 15px 0;
+
+                    &:hover {
+                        border-color: $main-green;
+
+                        select {
+                            color: $dark-color;
+                        }
+                    }
+
+                    select {
+                        width: calc(100% - 20px); height: 58px;
+                        text-transform: capitalize;
+                        line-height: 58px;
+                        padding-left: 30px;
+                        border: none;
+                        color: $grey-p-color;
+                        transition: .4s ease;
+
+                        option {
+                            color: $dark-color;
+                        }
+                    }
+                }
+                span {
+                    display: inline-block;
+                    position: absolute;
+                    top: -11.1px; left: 25px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: $dark-color;
+                    background-color: $white-color;
+                    padding: 0 10px;
+                }
+                input {
+                    font-size: 14px;
+                    padding: 0 20px;
+                    width: 100%; height: 58px;
+                    border: 2px solid #eaeaea;
+                    margin: 15px 0;
+                    transition: .4s ease;
+
+                    &:hover {
+                        border-color: $main-green;
+                    }
+
+                    &:focus {
+                        border: 2px solid $main-green;
+                    }
+                }
+            }
+
+            .interest {
+                padding-top: 35px;
+
+                p {
+                    margin-bottom: 5px;
+                    padding-bottom: 7px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: $dark-color;
+                }
+
+                .checks {
+                    display: flex;
+                    flex-wrap: wrap;
+                    
+                    .checkbox {
+                        padding: 4px 15px;
+
+                        label {
+                            cursor: pointer;
+                            font-size: 14px;
+                            color: #616161;
+                        }
+    
+                        input[type="checkbox"] {
+                            position: relative;
+                            transform: translateY(2px);
+                            cursor: default;
+                            border: initial;
+                            width: 14px; height: 14px;
+                            appearance: none;
+                            border: 2px solid $border-color;
+                            margin-right: 5px;
+                            transition: .3s ease;
+
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                background-color: $main-green;
+                                top: 2px; bottom: 2px;
+                                left: 2px; right: 2px;
+                                transform: scale(0);
+                                transition: .3s ease;
+                            }
+
+                            &:checked::before {
+                                transform: scale(1);
+                            }
+
+                            &:checked {
+                                border-color: $main-green;
+                            }
+                        }
+                    }
+                }
+            }
+            .s-request {
+                margin-top: 30px;
+
+                .btn-dark {
+                    position: relative;
+                    padding-left: 70px;
+
+                    &:hover {
+                        background-color: #282828;
+                        color: $main-green;
+
+                        span {
+                            background-color: $main-green;
+                        }
+                    }
+
+                    span {
+                        width: 26px; height: 26px;
+                        border-radius: 50%;
+                        background-color: $white-color;
+                        position: absolute;
+                        top: 50%;
+                        left: 35px;
+                        transform: translateY(-50%);
+                        text-align: center;
+                        transition: .4s ease;
+                        
+                        i {
+                            color: $dark-color;
+                            line-height: 26px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 576px) {
     .bss-secur {
         min-height: 100vh;
@@ -1187,6 +1400,22 @@
             }
             .quote {
                 text-align: center;
+            }
+        }
+    }
+
+    .request {
+        .wrapper {
+            flex-direction: column;
+            gap: 30px;
+
+            .widget-wrap {
+                padding: 20px !important;
+                width: 100% !important;
+
+                &.w-59 {
+                    box-shadow: none;
+                }
             }
         }
     }

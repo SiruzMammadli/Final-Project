@@ -2711,6 +2711,257 @@ ul {
   border-color: #65B530;
 }
 
+.request {
+  padding: 110px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.request .overlay-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("https://demo.cmssuperheroes.com/themeforest/sekure/wp-content/uploads/Access-Control-Installation.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.request .overlay-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #65b530c2;
+}
+
+.request .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.request .wrapper .widget-wrap {
+  background-color: white;
+  padding: 80px;
+}
+
+.request .wrapper .widget-wrap.w-59 {
+  width: 59.5%;
+  -webkit-box-shadow: 0px 5px 83px 0px rgba(27, 26, 26, 0.28);
+          box-shadow: 0px 5px 83px 0px rgba(27, 26, 26, 0.28);
+  z-index: 3;
+  padding: 80px 100px;
+}
+
+.request .wrapper .widget-wrap.w-40 {
+  width: calc(100% - 59.5%);
+}
+
+.request .wrapper .widget-wrap h3 {
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #1B1A1A;
+  margin-bottom: 20px;
+}
+
+.request .wrapper .widget-wrap p {
+  font-size: 15px;
+  color: #9B9B9B;
+  padding-bottom: 20px;
+}
+
+.request .wrapper .widget-wrap p a {
+  color: #1B1A1A;
+  font-weight: 700;
+}
+
+.request .wrapper .widget-wrap .selects {
+  text-transform: capitalize;
+}
+
+.request .wrapper .widget-wrap .selects .bord-field {
+  border: 2px solid #eaeaea;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+  position: relative;
+  margin: 15px 0;
+}
+
+.request .wrapper .widget-wrap .selects .bord-field:hover {
+  border-color: #65B530;
+}
+
+.request .wrapper .widget-wrap .selects .bord-field:hover select {
+  color: #1B1A1A;
+}
+
+.request .wrapper .widget-wrap .selects .bord-field select {
+  width: calc(100% - 20px);
+  height: 58px;
+  text-transform: capitalize;
+  line-height: 58px;
+  padding-left: 30px;
+  border: none;
+  color: #9B9B9B;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.request .wrapper .widget-wrap .selects .bord-field select option {
+  color: #1B1A1A;
+}
+
+.request .wrapper .widget-wrap .selects span {
+  display: inline-block;
+  position: absolute;
+  top: -11.1px;
+  left: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1B1A1A;
+  background-color: white;
+  padding: 0 10px;
+}
+
+.request .wrapper .widget-wrap .selects input {
+  font-size: 14px;
+  padding: 0 20px;
+  width: 100%;
+  height: 58px;
+  border: 2px solid #eaeaea;
+  margin: 15px 0;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.request .wrapper .widget-wrap .selects input:hover {
+  border-color: #65B530;
+}
+
+.request .wrapper .widget-wrap .selects input:focus {
+  border: 2px solid #65B530;
+}
+
+.request .wrapper .widget-wrap .interest {
+  padding-top: 35px;
+}
+
+.request .wrapper .widget-wrap .interest p {
+  margin-bottom: 5px;
+  padding-bottom: 7px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1B1A1A;
+}
+
+.request .wrapper .widget-wrap .interest .checks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.request .wrapper .widget-wrap .interest .checks .checkbox {
+  padding: 4px 15px;
+}
+
+.request .wrapper .widget-wrap .interest .checks .checkbox label {
+  cursor: pointer;
+  font-size: 14px;
+  color: #616161;
+}
+
+.request .wrapper .widget-wrap .interest .checks .checkbox input[type="checkbox"] {
+  position: relative;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  cursor: default;
+  border: initial;
+  width: 14px;
+  height: 14px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 2px solid #EAEAEA;
+  margin-right: 5px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.request .wrapper .widget-wrap .interest .checks .checkbox input[type="checkbox"]::before {
+  content: '';
+  position: absolute;
+  background-color: #65B530;
+  top: 2px;
+  bottom: 2px;
+  left: 2px;
+  right: 2px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.request .wrapper .widget-wrap .interest .checks .checkbox input[type="checkbox"]:checked::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.request .wrapper .widget-wrap .interest .checks .checkbox input[type="checkbox"]:checked {
+  border-color: #65B530;
+}
+
+.request .wrapper .widget-wrap .s-request {
+  margin-top: 30px;
+}
+
+.request .wrapper .widget-wrap .s-request .btn-dark {
+  position: relative;
+  padding-left: 70px;
+}
+
+.request .wrapper .widget-wrap .s-request .btn-dark:hover {
+  background-color: #282828;
+  color: #65B530;
+}
+
+.request .wrapper .widget-wrap .s-request .btn-dark:hover span {
+  background-color: #65B530;
+}
+
+.request .wrapper .widget-wrap .s-request .btn-dark span {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.request .wrapper .widget-wrap .s-request .btn-dark span i {
+  color: #1B1A1A;
+  line-height: 26px;
+}
+
 @media (max-width: 576px) {
   .bss-secur {
     min-height: 100vh;
@@ -2819,6 +3070,21 @@ ul {
   }
   .keep .wrapper .quote {
     text-align: center;
+  }
+  .request .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .request .wrapper .widget-wrap {
+    padding: 20px !important;
+    width: 100% !important;
+  }
+  .request .wrapper .widget-wrap.w-59 {
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 
