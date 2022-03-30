@@ -1470,6 +1470,42 @@
                 }
             }
         }
+
+        .dots {
+            display: none;
+        }
+
+        .all-case {
+            padding: 26.5px 39px;
+            width: 250px;
+            text-align: center;
+            cursor: pointer;
+
+            &:hover {
+                .text {
+                    color: $main-green;
+                }
+            }
+            .icon-circle {
+                margin: 35px 0 20px;
+                width: 68px; height: 68px;
+                background-color: $main-green;
+                border-radius: 50%;
+                color: $white-color;
+                text-align: center;
+                line-height: 78px;
+
+                i {
+                    font-size: 25px;
+                }
+            }
+            .text {
+                font-weight: 700;
+                text-transform: capitalize;
+                color: $dark-color;
+                transition: .4s ease;
+            }
+        }
     }
 }
 
@@ -1695,6 +1731,30 @@
                     .more-read {
                         transform: translateY(-48px);
                     }
+                }
+            }
+
+            .dots {
+                display: block;
+                padding-top: 50px;
+                text-align: center;
+                span {
+                    display: inline-block;
+                    width: 20px; height: 6px;
+                    background-color: $dark-color;
+                    margin: 4px;
+                    cursor: pointer;
+                    transition: .4s ease;
+
+                    &:hover {
+                        width: 40px;
+                        background-color: $main-green;
+                    }
+                }
+
+                .active {
+                    width: 40px;
+                    background-color: $main-green;
                 }
             }
         }

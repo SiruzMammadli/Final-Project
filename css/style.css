@@ -3237,6 +3237,44 @@ ul {
   margin: 0;
 }
 
+.explore .wrapper .dots {
+  display: none;
+}
+
+.explore .wrapper .all-case {
+  padding: 26.5px 39px;
+  width: 250px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.explore .wrapper .all-case:hover .text {
+  color: #65B530;
+}
+
+.explore .wrapper .all-case .icon-circle {
+  margin: 35px 0 20px;
+  width: 68px;
+  height: 68px;
+  background-color: #65B530;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 78px;
+}
+
+.explore .wrapper .all-case .icon-circle i {
+  font-size: 25px;
+}
+
+.explore .wrapper .all-case .text {
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #1B1A1A;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
 @media (max-width: 576px) {
   .bss-secur {
     min-height: 100vh;
@@ -3389,6 +3427,29 @@ ul {
   .explore .wrapper .swiper .cardBox .more-read {
     -webkit-transform: translateY(-48px);
             transform: translateY(-48px);
+  }
+  .explore .wrapper .dots {
+    display: block;
+    padding-top: 50px;
+    text-align: center;
+  }
+  .explore .wrapper .dots span {
+    display: inline-block;
+    width: 20px;
+    height: 6px;
+    background-color: #1B1A1A;
+    margin: 4px;
+    cursor: pointer;
+    -webkit-transition: .4s ease;
+    transition: .4s ease;
+  }
+  .explore .wrapper .dots span:hover {
+    width: 40px;
+    background-color: #65B530;
+  }
+  .explore .wrapper .dots .active {
+    width: 40px;
+    background-color: #65B530;
   }
 }
 
