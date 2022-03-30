@@ -2765,7 +2765,57 @@ ul {
 }
 
 .request .wrapper .widget-wrap.w-40 {
+  position: relative;
   width: calc(100% - 59.5%);
+}
+
+.request .wrapper .widget-wrap.w-40 .ribbon {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  top: -7px;
+  right: -7px;
+  overflow: hidden;
+}
+
+.request .wrapper .widget-wrap.w-40 .ribbon .main {
+  position: absolute;
+  top: 31px;
+  right: -33.5px;
+  background-color: #1B1A1A;
+  width: 164px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 35px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.request .wrapper .widget-wrap.w-40 .ribbon .main::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: -1;
+  border-left: 3px solid #1B1A1A;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #1B1A1A;
+}
+
+.request .wrapper .widget-wrap.w-40 .ribbon .main::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: -1;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #1B1A1A;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #1B1A1A;
 }
 
 .request .wrapper .widget-wrap.w-40 .bording {
@@ -3037,6 +3087,128 @@ ul {
 .request .wrapper .widget-wrap .s-request .btn-dark span i {
   color: #1B1A1A;
   line-height: 26px;
+}
+
+.explore .wrapper {
+  padding: 95px 0 55px 0;
+}
+
+.explore .wrapper .top-title {
+  padding-bottom: 22px;
+}
+
+.explore .wrapper .top-title span {
+  font-size: 16px;
+  font-weight: 700;
+  color: #65B530;
+  margin-bottom: 15px;
+}
+
+.explore .wrapper .top-title h2 {
+  font-size: 40px;
+  font-weight: 700;
+  width: 90%;
+  margin: auto;
+}
+
+.explore .wrapper .swiper .cardBox {
+  width: 400px;
+  -webkit-box-shadow: 0px 5px 83px 0px rgba(27, 26, 26, 0.06);
+          box-shadow: 0px 5px 83px 0px rgba(27, 26, 26, 0.06);
+  padding-bottom: 48px;
+  position: relative;
+}
+
+.explore .wrapper .swiper .cardBox:hover .more-read {
+  -webkit-transform: translateY(-48px);
+          transform: translateY(-48px);
+}
+
+.explore .wrapper .swiper .cardBox .arrow {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #eaeaea;
+  line-height: 48px;
+  z-index: -1;
+}
+
+.explore .wrapper .swiper .cardBox .more-read {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  padding: 12.75px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  background-color: #1B1A1A;
+  font-weight: 700;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.explore .wrapper .swiper .cardBox .more-read:hover {
+  background-color: #65B530;
+}
+
+.explore .wrapper .swiper .cardBox .more-read i {
+  padding: 0 5px;
+}
+
+.explore .wrapper .swiper .cardBox .more-read span {
+  padding: 0 5px;
+}
+
+.explore .wrapper .swiper .cardBox .card-img {
+  position: relative;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.explore .wrapper .swiper .cardBox .card-img span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-transform: capitalize;
+  font-size: 13px;
+  line-height: 19px;
+  color: white;
+  background-color: #65B530;
+  padding: 10px 15px;
+}
+
+.explore .wrapper .swiper .cardBox .item-content {
+  padding: 40px 40px 0;
+}
+
+.explore .wrapper .swiper .cardBox .item-content a {
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: 500;
+  color: #1B1A1A;
+  letter-spacing: 0.8px;
+  line-height: 28px;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.explore .wrapper .swiper .cardBox .item-content a:hover {
+  color: #65B530;
+}
+
+.explore .wrapper .swiper .cardBox .item-content p {
+  color: #9B9B9B;
+  padding-top: 10px;
+  margin: 0;
 }
 
 @media (max-width: 576px) {

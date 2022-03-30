@@ -1066,7 +1066,50 @@
                 padding: 80px 100px;
             }
             &.w-40 {
+                position: relative;
                 width: calc(100% - 59.5%);
+
+                .ribbon {
+                    position: absolute;
+                    width: 125px; height: 125px;
+                    top: -7px; right: -7px;
+                    overflow: hidden;
+
+                    .main {
+                        position: absolute;
+                        top: 31px; right: -33.5px;
+                        background-color: $dark-color;
+                        width: 164px;
+                        color: $white-color;
+                        font-size: 16px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        text-align: center;
+                        line-height: 35px;
+                        transform: rotate(45deg);
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 100%; left: 0;
+                            z-index: -1;
+                            border-left: 3px solid $dark-color;
+                            border-right: 3px solid transparent;
+                            border-bottom: 3px solid transparent;
+                            border-top: 3px solid $dark-color;
+                        }
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            top: 100%; right: 0;
+                            z-index: -1;
+                            border-left: 3px solid transparent;
+                            border-right: 3px solid $dark-color;
+                            border-bottom: 3px solid transparent;
+                            border-top: 3px solid $dark-color;
+                        }
+                    }
+                }
 
                 .bording {
                     margin: 0;
@@ -1306,6 +1349,123 @@
         }
     }
 }
+
+.explore {
+    .wrapper {
+        padding: 95px 0 55px 0;
+        
+        .top-title {
+            padding-bottom: 22px;
+            span {
+                font-size: 16px;
+                font-weight: 700;
+                color: $main-green;
+                margin-bottom: 15px;
+            }
+            h2 {
+                font-size: 40px;
+                font-weight: 700;
+                width: 90%;
+                margin: auto;
+            }
+        }
+
+        .swiper {
+            .cardBox {
+                width: 400px;
+                box-shadow: 0px 5px 83px 0px rgba(27,26,26, .06);
+                padding-bottom: 48px;
+                position: relative;
+
+                &:hover {
+                    .more-read {
+                        transform: translateY(-48px);
+                    }
+                }
+
+                .arrow {
+                    display: block;
+                    position: absolute;
+                    bottom: 0; right: 0;
+                    width: 48px; height: 48px;
+                    border: 1px solid #eaeaea;
+                    line-height: 48px;
+                    z-index: -1;
+                }
+
+                .more-read {
+                    position: absolute;
+                    top: 100%; right: 0;
+                    transform: translateY(0);
+                    padding: 12.75px 20px;
+                    display: flex;
+                    align-items: center;
+                    color: $white-color;
+                    background-color: $dark-color;
+                    font-weight: 700;
+                    transition: .4s ease;
+
+                    &:hover {
+                        background-color: $main-green;
+                    }
+
+                    i {
+                        padding: 0 5px;
+                    }
+
+                    span {
+                        padding: 0 5px;
+                    }
+                }
+
+                .card-img {
+                    position: relative;
+                    transform: translateY(0);
+
+                    span {
+                        position: absolute;
+                        bottom: 0; left: 0;
+                        text-transform: capitalize;
+                        font-size: 13px;
+                        line-height: 19px;
+                        color: $white-color;
+                        background-color: $main-green;
+                        padding: 10px 15px;
+                    }
+                }
+                .item-content {
+                    padding: 40px 40px 0;
+
+                    a {
+                        text-transform: capitalize;
+                        font-size: 22px;
+                        font-weight: 500;
+                        color: $dark-color;
+                        letter-spacing: 0.8px;
+                        line-height: 28px;
+                        transition: .4s ease;
+
+                        &:hover {
+                            color: $main-green;
+                        }
+                    }
+
+                    p {
+                        color: $grey-p-color;
+                        padding-top: 10px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+// RESPONSIVES
 
 @media (max-width: 576px) {
     .bss-secur {
